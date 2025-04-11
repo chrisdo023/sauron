@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="/eel.js"></script>  <!-- Added Eel.js -->
+    <script src="script.js"></script>  <!-- External JavaScript file -->
+</head>
+<body>
+    <h1>Packet Monitor</h1>
+    <label for="ip_input">Enter IP Addresses (comma-separated):</label>
+    <input type="text" id="ip_input" placeholder="e.g., 192.168.1.100, 192.168.1.101">
+    <button onclick="submitIPs()">Set IPs</button>
+    <button onclick="startCapture()">Start Capture</button>
+    <button onclick="stopCapture()">Stop Capture</button>
+    <p id="status"></p>  <!-- Live status update -->
+    <p id="rate">Packets/sec: 0</p>
+</body>
+</html>
